@@ -9,13 +9,13 @@ Yii2-seo
 Выполнить команду
 
 ```
-php composer require pistol88/yii2-seo "*"
+php composer require pistol88/seo "*"
 ```
 
 Или добавить в composer.json
 
 ```
-"pistol88/yii2-seo": "*",
+"pistol88/seo": "*",
 ```
 
 И выполнить
