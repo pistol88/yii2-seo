@@ -51,21 +51,16 @@ php yii migrate --migrationPath=vendor/pistol88/yii2-seo/migrations
 Пример использования во вью файле:
 
 ```php
-if($seo = $model->seo) {
-    if(!$title = $seo->title) {
-        $title = "Купить {$model->name} в Кургане в магазине «Шоп45»";
-    }
 
-    if(!$description = $seo->description) {
-        $description = 'Страница '.$model->name;
-    }
-
-    if(!$keywords = $seo->keywords) {
-        $keywords = '';
-    }
-} else {
+if(!$title = $model->seo->title) {
     $title = "Купить {$model->name} в Кургане в магазине «Шоп45»";
+}
+
+if(!$description = $model->seo->description) {
     $description = 'Страница '.$model->name;
+}
+
+if(!$keywords = $model->seo->keywords) {
     $keywords = '';
 }
 
