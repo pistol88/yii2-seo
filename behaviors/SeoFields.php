@@ -35,7 +35,7 @@ class SeoFields extends Behavior
     public function deleteFields($event)
     {
         if($this->owner->seo) {
-            Seo::findOne(['item_id' => $this->owner->id, 'modelName' => $this->owner->className()])->delete();
+            $this->owner->seo->delete();
         }
         
         return true;
