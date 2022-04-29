@@ -1,12 +1,12 @@
 <?php
-namespace pistol88\seo\behaviors;
+namespace liemuar\seo\behaviors;
 
 use yii;
 use yii\base\Behavior;
 use yii\db\ActiveRecord;
 use yii\helpers\Inflector;
 use yii\helpers\ArrayHelper;
-use pistol88\seo\models\Seo;
+use liemuar\seo\models\Seo;
 
 class SeoFields extends Behavior
 {
@@ -23,10 +23,10 @@ class SeoFields extends Behavior
     {
         $post = Yii::$app->request->post();
         
-        if (($model = Seo::findOne(['item_id' => $this->owner->id, 'modelName' => $this->owner->className() ])) === null) {
+        if (($model = Seo::findOne(['item_id' => $this->owner->iId, 'modelName' => $this->owner->className() ])) === null) {
             $model = new Seo;
         }
-        $post['Seo']['item_id'] = $this->owner->id;
+        $post['Seo']['item_id'] = $this->owner->iId;
         
         $model->load($post);
         $model->save();
@@ -43,7 +43,7 @@ class SeoFields extends Behavior
     
     public function getSeo()
     {
-        if($model = Seo::find()->where(['item_id' => $this->owner->id, 'modelName' => $this->owner->className()])->one()) {
+        if($model = Seo::find()->where(['item_id' => $this->owner->iId, 'modelName' => $this->owner->className()])->one()) {
             return $model;
         } else {
             return new Seo;
