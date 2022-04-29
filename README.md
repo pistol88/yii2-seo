@@ -9,13 +9,13 @@ Yii2-seo
 Выполнить команду
 
 ```
-php composer require pistol88/yii2-seo "*"
+php composer require liemuar/yii2-seo "*"
 ```
 
 Или добавить в composer.json
 
 ```
-"pistol88/yii2-seo": "*",
+"liemuar/yii2-seo": "*",
 ```
 
 И выполнить
@@ -40,7 +40,7 @@ php yii migrate --migrationPath=vendor/pistol88/yii2-seo/migrations
     {
         return [
             'seo' => [
-                'class' => 'pistol88\seo\behaviors\SeoFields',
+                'class' => 'liemuar\seo\behaviors\SeoFields',
             ],
         ];
     }
