@@ -23,10 +23,10 @@ class SeoFields extends Behavior
     {
         $post = Yii::$app->request->post();
         
-        if (($model = Seo::findOne(['item_id' => $this->owner->id, 'modelName' => $this->owner->className() ])) === null) {
+        if (($model = Seo::findOne(['item_id' => $this->owner->iId, 'modelName' => $this->owner->className() ])) === null) {
             $model = new Seo;
         }
-        $post['Seo']['item_id'] = $this->owner->id;
+        $post['Seo']['item_id'] = $this->owner->iId;
         
         $model->load($post);
         $model->save();
@@ -43,7 +43,7 @@ class SeoFields extends Behavior
     
     public function getSeo()
     {
-        if($model = Seo::find()->where(['item_id' => $this->owner->id, 'modelName' => $this->owner->className()])->one()) {
+        if($model = Seo::find()->where(['item_id' => $this->owner->iId, 'modelName' => $this->owner->className()])->one()) {
             return $model;
         } else {
             return new Seo;

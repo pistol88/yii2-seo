@@ -27,7 +27,7 @@ class SeoForm extends \yii\base\Widget
     public function run()
     {
         if (!$this->model->isNewRecord) {
-            if (($this->model = Seo::findOne(['item_id' => $this->model->id, 'modelName' => $this->modelName])) === null) {
+            if (($this->model = Seo::findOne(['item_id' => $this->model->iId, 'modelName' => $this->modelName])) === null) {
                 $this->model = new Seo;
             }
         } else {
