@@ -1,5 +1,5 @@
 <?php
-namespace pistol88\seo\models;
+namespace liemuar\seo\models;
 
 use Yii;
 
