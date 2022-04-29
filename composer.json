@@ -1,17 +1,17 @@
 {
-    "name": "pistol88/yii2-seo",
+    "name": "liemuar/yii2-seo",
     "description": "Модуль позволяет привязывать SEO поля к моделям",
-    "keywords": ["yii2", "yii2", "application", "SEO", "seo", "pistol88"],
-    "homepage": "https://github.com/pistol88/yii2-seo",
+    "keywords": ["yii2", "yii2", "application", "SEO", "seo", "liemuar"],
+    "homepage": "https://github.com/liemuar/yii2-seo",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "source": "https://github.com/pistol88/yii2-seo"
+        "source": "https://github.com/liemuar/yii2-seo"
     },
     "authors": [
         {
-            "name": "Ilya Pistol + Ivan Kartonka",
-            "email": "pistol88@gmail.com"
+            "name": "liemuar",
+            "email": "none"
         }
     ],
     "minimum-stability": "dev",
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "pistol88\\seo\\": ""
+            "liemuar\\seo\\": ""
         }
     }
 }

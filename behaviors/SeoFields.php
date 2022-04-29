@@ -1,12 +1,12 @@
 <?php
-namespace pistol88\seo\behaviors;
+namespace liemuar\seo\behaviors;
 
 use yii;
 use yii\base\Behavior;
 use yii\db\ActiveRecord;
 use yii\helpers\Inflector;
 use yii\helpers\ArrayHelper;
-use pistol88\seo\models\Seo;
+use liemuar\seo\models\Seo;
 
 class SeoFields extends Behavior
 {
