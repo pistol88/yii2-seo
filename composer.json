@@ -5,6 +5,7 @@
     "homepage": "https://github.com/liemuar/yii2-seo",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
+    "preferred-stable": true,
     "support": {
         "source": "https://github.com/liemuar/yii2-seo"
     },
@@ -28,4 +29,5 @@
             "liemuar\\seo\\": ""
         }
     }
+    
 }
