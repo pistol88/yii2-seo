@@ -27,7 +27,7 @@ php composer update
 Миграция:
 
 ```
-php yii migrate --migrationPath=vendor/pistol88/yii2-seo/migrations
+php yii migrate --migrationPath=vendor/liemuar/yii2-seo/migrations
 ```
 
 Использование
@@ -83,7 +83,7 @@ $this->registerMetaTag([
 
 Ввод СЕО полей:
 ```
-<?=\pistol88\seo\widgets\SeoForm::widget([
+<?=\liemuar\seo\widgets\SeoForm::widget([
         'model' => $model, 
         'form' => $form, 
     ]); ?>
